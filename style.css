@@ -1,0 +1,225 @@
+/* CSS RESE */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    position: relative;
+    z-index: 0;
+    min-height: 100vh;
+}
+
+body::before {
+    content: " ";
+    position: fixed;
+    background: url('image/shorthand2.jpg') no-repeat center center/cover;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+}
+
+
+/* navigation bar : logo and image  */
+#logo {
+    margin: 10px 12px;
+
+}
+
+#logo img {
+    margin: 5px 3px;
+    height: 71px;
+
+}
+
+
+/* Home Section  */
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    min-height: 100vh;
+}
+
+#home h1 {
+    text-align: center;
+}
+
+#home p {
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: serif;
+}
+
+.h-primary {
+    font-size: 60px;
+    padding: 15px;
+    font-family:serif;
+}
+
+
+#DESC {
+    position: relative;
+    z-index: 1;
+    padding: 2rem;
+    min-height: 100vh;
+
+}
+
+.DESCR {
+    display: inline-block;
+    /* border: 2px solid black; */
+    padding: 2rem 2rem;
+    vertical-align: middle;
+}
+
+#DESC p {
+    font-size: 1.2rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 2rem 2rem;
+
+}
+
+#DESC ul {
+    font-size: 1.3rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 2rem 2rem;
+    ;
+}
+
+
+
+.btn {
+    padding: 5px 10px;
+    border: 5px solid rgb(29, 27, 27);
+    background-color: rgb(152, 137, 137);
+    color: rgb(87, 91, 95);
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: black;
+    background-color: rgb(60, 74, 74);
+}
+
+.CON{
+    padding: 20px 30px;
+    text-align: center;
+    max-width: 500px;
+    margin: 50px auto;
+    background: #f4f4f4;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgbs(0,0,0,0.2);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.CON h1{
+    font-size: 35px;
+}
+#contact-form{
+    max-width: 250px;
+    margin: auto;
+    gap: 10px;
+    font-size: 1.5rem;
+}
+#contact-form input, #contact-form textarea{
+    padding: 12px;
+    border: 4px solid black;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+.contact-info{
+    margin-top: 30px;
+    font-size: 1rem;
+    color:#333;
+}
+
+/* ABOUT US  */
+.about-section{
+    padding: 40px 20px;
+    background-color: #f8f9fa;
+}
+.about-content{
+    max-width: 1000px;
+    margin: auto;
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+
+/* services  */
+#services{
+    background-color: #e8e3e3;
+    padding: 40px 20px;
+}
+.service-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.service-box{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #f4f4f4;
+    width: 300px;
+    height: 400px;
+    padding: 20px;
+    border-radius: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.3);
+    /* backdrop-filter: brightness(0.8); */
+    transition: transform 0.3s ease;
+    background-blend-mode: darken;
+    background-color: rgba(0,0,0,0.4);
+}
+.service-box:hover{
+    transform: scale(1.05);
+}
+.service-box h2{
+    margin: 0;
+    font-size: 1.5rem;
+    background-color: rgba(0,0,0,0.5);
+    padding: 6px;
+    border-radius: 5px;
+}
+.service-box p{
+    font-size: 1rem;
+    background-color: rgba(0,0,0,0.5);
+    padding: 5px;
+    border-radius: 5px;
+    margin: 10px 0 0;
+}
+.toggle-btn{
+    background-color: #ffffffcc;
+    color: black;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.hidden{
+    display: none;
+}
+
+.card:hover{
+    transform: scale(1.05);
+}
+
